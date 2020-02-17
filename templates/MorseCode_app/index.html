@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{%extends 'MorseCode_app/base.html' %}
+{%load static%}
+{%block body%}
+<img src="{% static "images/morse code.jpg" %}" alt="Hi!" />
+<br><br><br>
+<form action="Txt_to_Morse" method="get">
+    <input type="text"  name="msg" class="form-control" placeholder="Enter Message" aria-label="Username" aria-describedby="basic-addon1">
+    <br><br>
+    <input type="submit" class="btn btn-primary">
+</form>
+<br><br>
+<b style=" color:blue">Result: </b><label for="result"><b>{{morse}}</b></label>
+{%endblock%}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+{%load static%}
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="{%static "css/bulma.css"%}"> -->
+    <title>Home</title>
+  </head>
+  <body>
+<div class="jumbotron">
+  <nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">MorseCodeConverter</a>
+  </div>
+   <ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="{%url 'admin:index' %}">Admin</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{%url 'index' %}">Home</a>
+  </li>
+</ul>
+</nav>
+</div>
+<div class="container">
+  {%block body%}
+  {%endblock%}
+</div>
+  </body>
+</html>
